@@ -467,8 +467,8 @@
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
             max-width: 1000px;
             margin: 0 auto;
         }
@@ -536,13 +536,6 @@
             color: var(--text-dark);
             margin-bottom: 8px;
             font-size: 1.3rem;
-        }
-
-        .team-member p {
-            color: var(--highlight-blue);
-            font-weight: 600;
-            margin-bottom: 0;
-            font-size: 1rem;
         }
 
         /* ===============================
@@ -723,6 +716,11 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 40px;
             }
+
+            .team-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -779,8 +777,8 @@
             }
 
             .team-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
 
             .join-us-container {
@@ -796,6 +794,24 @@
 
             .footer-socials {
                 justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .team-member {
+                padding: 30px 20px;
+            }
+
+            .team-member-avatar {
+                width: 100px;
+                height: 100px;
+                font-size: 2rem;
+                margin-bottom: 20px;
             }
         }
 
@@ -905,28 +921,24 @@
                         <div class="team-member-content">
                             <div class="team-member-avatar">SK</div>
                             <h4>Swaraj Kanse</h4>
-                            <p>Co-Founder & CEO</p>
                         </div>
                     </div>
                     <div class="team-member fade-up stagger-2">
                         <div class="team-member-content">
                             <div class="team-member-avatar">SL</div>
                             <h4>Siddhi Lahoti</h4>
-                            <p>Co-Founder & CTO</p>
                         </div>
                     </div>
                     <div class="team-member fade-up stagger-3">
                         <div class="team-member-content">
                             <div class="team-member-avatar">YM</div>
                             <h4>Yaashika Murpani</h4>
-                            <p>Head of Product</p>
                         </div>
                     </div>
                     <div class="team-member fade-up stagger-4">
                         <div class="team-member-content">
                             <div class="team-member-avatar">AS</div>
                             <h4>Afifa Syed</h4>
-                            <p>Head of Design</p>
                         </div>
                     </div>
                 </div>

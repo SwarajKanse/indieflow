@@ -1235,6 +1235,39 @@
         // Initialize search bar
         addSearchBar();
 
+// ===============================
+        // CURSOR TRAIL EFFECT
+        // ===============================
+        const cursor = document.createElement('div');
+        cursor.className = 'cursor-trail';
+        cursor.style.cssText = `
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, rgba(255,107,53,0.8), rgba(255,107,53,0.2));
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+        `;
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 10 + 'px';
+            cursor.style.top = e.clientY - 10 + 'px';
+        });
+
+        // Scale cursor on hover over interactive elements
+        document.querySelectorAll('a, button, .btn').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+            });
+        });
+
         // ===============================
         // PERFORMANCE OPTIMIZATION
         // ===============================

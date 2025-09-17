@@ -4,69 +4,1204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features - IndieFlow</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
     <style>
-        :root{--primary-dark:#0D1B2A;--secondary-bg:#E0E1DD;--accent-orange:#FF8C42;--highlight-blue:#778DA9;--text-light:#FFFFFF;--text-dark:#0D1B2A;--font-heading:'Poppins',sans-serif;--font-body:'Inter',sans-serif}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--font-body);background-color:var(--secondary-bg);color:var(--text-dark);line-height:1.6}.container{max-width:1100px;margin:0 auto;padding:0 20px}section{padding:80px 0}h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;margin-bottom:20px;line-height:1.2}h1{font-size:3.5rem}h2{font-size:2.5rem}h3{font-size:1.5rem}p{margin-bottom:20px;max-width:600px}img{max-width:100%;height:auto;display:block}.btn{display:inline-block;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.btn-primary{background-color:var(--accent-orange);color:var(--text-dark)}.btn:hover{transform:translateY(-3px);box-shadow:0 4px 15px rgba(0,0,0,.1)}.main-header{background-color:rgba(224,225,221,.8);backdrop-filter:blur(10px);padding:15px 0;position:sticky;top:0;z-index:1000;width:100%}.main-header .container{display:flex;justify-content:space-between;align-items:center}.logo{font-family:var(--font-heading);font-size:1.8rem;text-decoration:none;color:var(--text-dark)}.main-nav ul{display:flex;list-style:none;gap:30px}.main-nav a{text-decoration:none;color:var(--text-dark);font-weight:500;position:relative;padding-bottom:5px}.main-nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background-color:var(--accent-orange);transition:width .3s ease}.main-nav a:hover::after{width:100%}.nav-actions{display:flex;align-items:center;gap:15px}.nav-actions .login-btn{text-decoration:none;font-weight:600;color:var(--text-dark)}.hamburger{display:none;cursor:pointer;font-size:2rem}.page-hero{padding:80px 0;text-align:center;background-color:#fff}.page-hero h1{font-size:3rem}.page-hero p{font-size:1.1rem;max-width:600px;margin:0 auto}.feature-section{display:flex;align-items:center;gap:60px;padding:40px 0;}.feature-section .feature-text,.feature-section .feature-image{flex:1}.feature-section .feature-image img{border-radius:12px;box-shadow:0 15px 30px rgba(0,0,0,.1)}.feature-section .eyebrow{font-weight:600;color:var(--accent-orange);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}.feature-section h3{font-size:2rem}.feature-section ul{list-style:none;padding-left:0}.feature-section li{position:relative;padding-left:30px;margin-bottom:15px}.feature-section li::before{content:'\\f26a';font-family:'bootstrap-icons';position:absolute;left:0;top:2px;color:var(--accent-orange);font-size:1.2rem}.feature-section.reverse{flex-direction:row-reverse}.final-cta{text-align:center;background-color:#fff}footer{background-color:var(--primary-dark);color:var(--text-light);padding:60px 0 20px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}.footer-logo-col p{font-size:.9rem;max-width:300px;color:#ccc}.footer-socials{display:flex;gap:15px;list-style:none;margin-top:20px}.footer-socials a{color:var(--text-light);font-size:1.5rem}.footer-col h4{font-family:var(--font-heading);margin-bottom:15px}.footer-col ul{list-style:none}.footer-col li{margin-bottom:10px}.footer-col a{text-decoration:none;color:#ccc;transition:color .2s ease}.footer-col a:hover{color:var(--accent-orange)}.footer-bottom{text-align:center;padding-top:20px;border-top:1px solid #444;font-size:.9rem;color:#aaa}@media (max-width:992px){h1{font-size:2.8rem}h2{font-size:2rem}.footer-grid{grid-template-columns:1fr 1fr}}@media (max-width:768px){.main-nav{display:none;position:absolute;top:70px;right:0;background-color:var(--secondary-bg);width:100%;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}.main-nav.active{display:block}.main-nav ul{flex-direction:column;text-align:center}.nav-actions{display:none}.hamburger{display:block}.feature-section,.feature-section.reverse{flex-direction:column}.footer-grid{grid-template-columns:1fr;text-align:center}.footer-logo-col p{margin:0 auto}.footer-socials{justify-content:center}}@media (max-width:576px){.page-hero h1{font-size:2.2rem}}
+        /* ===============================
+           MODERN DESIGN SYSTEM & VARIABLES
+           =============================== */
+        :root {
+            --primary-dark: #0a0e1a;
+            --primary-darker: #050711;
+            --secondary-bg: #f8f9fc;
+            --accent-orange: #ff6b35;
+            --accent-orange-light: #ff8559;
+            --accent-purple: #6366f1;
+            --accent-teal: #14b8a6;
+            --highlight-blue: #3b82f6;
+            --success-green: #10b981;
+            --warning-yellow: #f59e0b;
+            --text-light: #ffffff;
+            --text-dark: #1f2937;
+            --text-muted: #6b7280;
+            --border-light: #e5e7eb;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-glow: 0 0 30px rgba(255, 107, 53, 0.3);
+        }
+
+        /* ===============================
+           RESET & BASE STYLES
+           =============================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(135deg, var(--secondary-bg) 0%, #ffffff 100%);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background elements */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.03) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(2deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* ===============================
+           TYPOGRAPHY
+           =============================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(135deg, var(--text-dark) 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 2vw, 1.75rem);
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* ===============================
+           BUTTONS & INTERACTIVE ELEMENTS
+           =============================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
+            color: var(--text-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow), var(--shadow-xl);
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            border: 2px solid var(--border-light);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* ===============================
+           HEADER & NAVIGATION
+           =============================== */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(248, 249, 252, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 16px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .main-header.scrolled {
+            background: rgba(248, 249, 252, 0.95);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            position: relative;
+            padding: 8px 0;
+            transition: all 0.3s ease;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-purple));
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .login-btn {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--text-dark);
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--accent-purple);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            padding: 8px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        /* ===============================
+           PAGE HERO
+           =============================== */
+        .page-hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(20, 184, 166, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            margin: 0 auto 40px auto;
+            max-width: 600px;
+        }
+
+        /* ===============================
+           FEATURE SECTIONS
+           =============================== */
+        .feature-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 120px;
+        }
+
+        .feature-section.reverse {
+            direction: rtl;
+        }
+
+        .feature-section.reverse > * {
+            direction: ltr;
+        }
+
+        .feature-text {
+            position: relative;
+        }
+
+        .eyebrow {
+            font-weight: 700;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 32px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-purple));
+            border-radius: 2px;
+        }
+
+        .feature-text h3 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            margin-bottom: 24px;
+            color: var(--text-dark);
+        }
+
+        .feature-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            max-width: none;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 32px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding: 16px 0;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .feature-list li::after {
+            content: '✓';
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transform: translateY(-50%);
+        }
+
+        .feature-list li {
+            padding-left: 36px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .feature-image {
+            position: relative;
+        }
+
+        .feature-mockup {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        .feature-mockup:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 
+                0 40px 80px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Feature mockup content styles */
+        .mockup-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-darker));
+            color: var(--text-light);
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mockup-content {
+            padding: 40px 32px;
+        }
+
+        .mockup-form-group {
+            margin-bottom: 24px;
+        }
+
+        .mockup-label {
+            display: block;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .mockup-input {
+            width: 100%;
+            background: var(--secondary-bg);
+            border: 2px solid var(--border-light);
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .mockup-input:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+            background: white;
+        }
+
+        .mockup-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .status-badge {
+            background: var(--success-green);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===============================
+           SPECIAL FEATURE SECTIONS
+           =============================== */
+        .features-overview {
+            background: var(--primary-dark);
+            color: var(--text-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features-overview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .features-overview .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .features-overview h2 {
+            color: var(--text-light);
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px 32px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: left;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .feature-card-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-card h3 {
+            color: var(--text-light);
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* ===============================
+           FINAL CTA
+           =============================== */
+        .final-cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--secondary-bg) 0%, #ffffff 100%);
+        }
+
+        .final-cta h2 {
+            margin-bottom: 16px;
+        }
+
+        .final-cta p {
+            margin: 0 auto 40px auto;
+            font-size: 1.2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===============================
+           FOOTER
+           =============================== */
+        footer {
+            background: var(--primary-dark);
+            color: var(--text-light);
+            padding: 80px 0 32px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo-col .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-col p {
+            font-size: 1rem;
+            max-width: 320px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+            margin-top: 32px;
+        }
+
+        .footer-socials a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-socials a:hover {
+            color: var(--accent-orange);
+            background: rgba(255, 107, 53, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            color: var(--text-light);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 16px;
+        }
+
+        .footer-col a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-orange);
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ===============================
+           ANIMATIONS & EFFECTS
+           =============================== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+
+        /* ===============================
+           RESPONSIVE DESIGN
+           =============================== */
+        @media (max-width: 1024px) {
+            .feature-section {
+                grid-template-columns: 1fr;
+                gap: 60px;
+                text-align: center;
+            }
+            
+            .feature-section.reverse {
+                direction: ltr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(248, 249, 252, 0.95);
+                backdrop-filter: blur(20px);
+                border-top: 1px solid var(--border-light);
+                padding: 32px 24px;
+                box-shadow: var(--shadow-lg);
+            }
+
+            .main-nav.active {
+                display: block;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .nav-actions {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .page-hero {
+                min-height: auto;
+                padding-top: 120px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-socials {
+                justify-content: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .mockup-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .feature-text h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ===============================
+           UTILITY CLASSES
+           =============================== */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body>
-
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
-            <a href="index.html" class="logo">IndieFlow</a>
-            <nav class="main-nav" id="main-nav">
-                <ul>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="#" class="btn btn-primary">Sign Up Free</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <i class="bi bi-list"></i>
+            <div class="nav-container">
+                <a href="index.html" class="logo">IndieFlow</a>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <a href="login.html" class="login-btn">Login</a>
+                    <a href="signup.html" class="btn btn-primary">
+                        Sign Up Free
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="bi bi-list"></i>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
         <section class="page-hero">
-            <div class="container" data-aos="fade-up">
-                <h1>The Complete Toolkit to Run Your Freelance Business.</h1>
-                <p>From invoicing to tax reports, IndieFlow handles the admin so you can focus on your craft.</p>
+            <div class="container">
+                <div class="page-hero-content fade-up">
+                    <h1>The Complete Toolkit to Run Your<br><span class="text-gradient">Freelance Business.</span></h1>
+                    <p>From invoicing to tax reports, IndieFlow handles the admin so you can focus on your craft. Everything you need to run a successful freelance business in India.</p>
+                </div>
             </div>
         </section>
 
         <section class="container">
-            <div class="feature-section">
-                <div class="feature-image" data-aos="fade-right"><img src="http://googleusercontent.com/image_generation_content/1" alt="IndieFlow Invoicing UI"></div>
-                <div class="feature-text" data-aos="fade-left"><p class="eyebrow">INVOICING</p><h3>Create Professional Invoices in Seconds</h3><p>Impress your clients and get paid faster with beautiful, GST-compliant invoices. Add your branding, integrate payment gateways, and let IndieFlow send automated payment reminders.</p><ul><li>Customizable, professional templates</li><li>Automated GST and TDS calculation</li><li>Integrated UPI & Card payment links</li></ul></div>
+            <div class="feature-section fade-up">
+                <div class="feature-text">
+                    <div class="eyebrow">INVOICING</div>
+                    <h3>Create Professional Invoices in Seconds</h3>
+                    <p>Impress your clients and get paid faster with beautiful, GST-compliant invoices. Add your branding, integrate payment gateways, and let IndieFlow send automated payment reminders.</p>
+                    <ul class="feature-list">
+                        <li>Customizable, professional templates that reflect your brand</li>
+                        <li>Automated GST and TDS calculation with zero errors</li>
+                        <li>Integrated UPI & Card payment links for instant payments</li>
+                        <li>Smart payment reminders that get results without being pushy</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">
+                        Try Invoicing Free
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-mockup">
+                        <div class="mockup-header">
+                            <h4 style="margin: 0; font-size: 1.2rem;">Create Invoice</h4>
+                            <div class="status-badge">DRAFT</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div style="border: 2px dashed var(--border-light); border-radius: 12px; padding: 32px; text-align: center; margin-bottom: 24px; background: var(--secondary-bg);">
+                                <i class="bi bi-cloud-upload" style="font-size: 2.5rem; color: var(--text-muted); margin-bottom: 12px; display: block;"></i>
+                                <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Drop your logo here or browse</p>
+                            </div>
+                            <div class="mockup-grid">
+                                <div class="mockup-form-group">
+                                    <label class="mockup-label">Client Name</label>
+                                    <input type="text" class="mockup-input" value="Acme Corporation" readonly>
+                                </div>
+                                <div class="mockup-form-group">
+                                    <label class="mockup-label">Amount</label>
+                                    <input type="text" class="mockup-input" value="₹25,000" readonly>
+                                </div>
+                            </div>
+                            <div class="mockup-form-group">
+                                <label class="mockup-label">Description</label>
+                                <textarea class="mockup-input" style="height: 80px; resize: none;" readonly>Website redesign and development - Phase 1</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature-section reverse">
-                <div class="feature-image" data-aos="fade-left"><img src="http://googleusercontent.com/image_generation_content/2" alt="Scanning a receipt with IndieFlow mobile app"></div>
-                <div class="feature-text" data-aos="fade-right"><p class="eyebrow">EXPENSES</p><h3>Track Your Expenses Effortlessly</h3><p>Stop worrying about lost receipts and confusing spreadsheets. Track your business expenses on the go with our smart scanner or connect your bank account for automated categorization.</p><ul><li>AI-powered receipt scanning</li><li>Automatic expense categorization</li><li>Secure bank account integration</li></ul></div>
+
+            <div class="feature-section reverse fade-up stagger-2">
+                <div class="feature-text">
+                    <div class="eyebrow">EXPENSE TRACKING</div>
+                    <h3>Track Your Expenses Effortlessly</h3>
+                    <p>Stop worrying about lost receipts and confusing spreadsheets. Track your business expenses on the go with our smart scanner or connect your bank account for automated categorization.</p>
+                    <ul class="feature-list">
+                        <li>AI-powered receipt scanning that extracts all details instantly</li>
+                        <li>Automatic expense categorization for maximum tax deductions</li>
+                        <li>Secure bank account integration with real-time sync</li>
+                        <li>Mileage tracking for business trips and client meetings</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">
+                        Start Tracking Expenses
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-mockup">
+                        <div class="mockup-header">
+                            <h4 style="margin: 0; font-size: 1.2rem;">Scan Receipt</h4>
+                            <div style="background: var(--accent-orange); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                                <i class="bi bi-camera" style="margin-right: 4px;"></i>
+                                AI POWERED
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 24px; color: white; margin-bottom: 24px;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                                    <i class="bi bi-receipt" style="font-size: 1.5rem;"></i>
+                                    <div>
+                                        <div style="font-weight: 600;">Cafe Coffee Day</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8;">Receipt scanned successfully</div>
+                                    </div>
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.9rem;">
+                                    <div>Amount: ₹450</div>
+                                    <div>Category: Meals</div>
+                                    <div>Date: Today</div>
+                                    <div>GST: ₹68 (18%)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 12px;">
+                                <button style="flex: 1; background: var(--success-green); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                                    <i class="bi bi-check"></i> Save Expense
+                                </button>
+                                <button style="background: var(--text-muted); color: white; border: none; padding: 12px 16px; border-radius: 8px; cursor: pointer;">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature-section">
-                <div class="feature-image" data-aos="fade-right"><img src="http://googleusercontent.com/image_generation_content/3" alt="IndieFlow Project Proposal UI"></div>
-                <div class="feature-text" data-aos="fade-left"><p class="eyebrow">PROPOSALS</p><h3>Win More Clients with Stunning Proposals</h3><p>Land your next big project with professional proposals that stand out. Create, send, and get approvals with digital signatures, then convert your proposal into a project with one click.</p><ul><li>Elegant and modern templates</li><li>Clear milestone and payment schedules</li><li>One-click proposal to project conversion</li></ul></div>
+
+            <div class="feature-section fade-up stagger-3">
+                <div class="feature-text">
+                    <div class="eyebrow">PROPOSALS</div>
+                    <h3>Win More Clients with Stunning Proposals</h3>
+                    <p>Land your next big project with professional proposals that stand out. Create, send, and get approvals with digital signatures, then convert your proposal into a project with one click.</p>
+                    <ul class="feature-list">
+                        <li>Elegant templates that make you look like a pro</li>
+                        <li>Clear milestone and payment schedules clients love</li>
+                        <li>Digital signatures for instant approvals</li>
+                        <li>One-click proposal to project conversion</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">
+                        Create Your First Proposal
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-mockup">
+                        <div class="mockup-header">
+                            <h4 style="margin: 0; font-size: 1.2rem;">Project Proposal</h4>
+                            <div style="background: var(--warning-yellow); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                                PENDING APPROVAL
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div style="margin-bottom: 24px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 8px;">E-commerce Website Development</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0;">For: Tech Startup Solutions Pvt. Ltd.</p>
+                            </div>
+                            <div style="background: var(--secondary-bg); border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                                    <div>
+                                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">Total Value</div>
+                                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark);">₹2,50,000</div>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">Timeline</div>
+                                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark);">8 Weeks</div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 8px;">
+                                    <span style="background: var(--accent-orange); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">UI/UX DESIGN</span>
+                                    <span style="background: var(--accent-purple); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">DEVELOPMENT</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 12px;">
+                                <button style="flex: 1; background: var(--accent-orange); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                                    <i class="bi bi-send"></i> Send Proposal
+                                </button>
+                                <button style="background: var(--text-muted); color: white; border: none; padding: 12px 16px; border-radius: 8px; cursor: pointer;">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature-section reverse">
-                <div class="feature-image" data-aos="fade-left"><img src="http://googleusercontent.com/image_generation_content/4" alt="IndieFlow financial report on a screen"></div>
-                <div class="feature-text" data-aos="fade-right"><p class="eyebrow">REPORTS</p><h3>Know Your Numbers, Grow Your Business</h3><p>Make smarter business decisions with real-time financial insights. From your cash flow to your annual profit & loss, your financial health is always just a click away.</p><ul><li>Real-time cash flow dashboard</li><li>Profit & Loss statements</li><li>GST and TDS reports for easy filing</li></ul></div>
+
+            <div class="feature-section reverse fade-up stagger-4">
+                <div class="feature-text">
+                    <div class="eyebrow">ANALYTICS & REPORTS</div>
+                    <h3>Know Your Numbers, Grow Your Business</h3>
+                    <p>Make smarter business decisions with real-time financial insights. From your cash flow to your annual profit & loss, your financial health is always just a click away.</p>
+                    <ul class="feature-list">
+                        <li>Real-time cash flow dashboard with actionable insights</li>
+                        <li>Automated Profit & Loss statements for any time period</li>
+                        <li>GST and TDS reports ready for easy filing</li>
+                        <li>Client profitability analysis to focus on your best work</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">
+                        View Sample Reports
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-mockup">
+                        <div class="mockup-header">
+                            <h4 style="margin: 0; font-size: 1.2rem;">Financial Dashboard</h4>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.8rem;">
+                                <i class="bi bi-calendar"></i> This Month
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px;">
+                                <div style="background: linear-gradient(135deg, var(--success-green), #059669); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                                    <div style="font-size: 0.8rem; opacity: 0.8; margin-bottom: 4px;">REVENUE</div>
+                                    <div style="font-size: 1.8rem; font-weight: 700;">₹1,24,500</div>
+                                    <div style="font-size: 0.7rem; opacity: 0.8;">+23% vs last month</div>
+                                </div>
+                                <div style="background: linear-gradient(135deg, var(--highlight-blue), #1d4ed8); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                                    <div style="font-size: 0.8rem; opacity: 0.8; margin-bottom: 4px;">EXPENSES</div>
+                                    <div style="font-size: 1.8rem; font-weight: 700;">₹38,200</div>
+                                    <div style="font-size: 0.7rem; opacity: 0.8;">-5% vs last month</div>
+                                </div>
+                            </div>
+                            <div style="background: var(--secondary-bg); border-radius: 12px; padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                    <h5 style="margin: 0; color: var(--text-dark);">Recent Transactions</h5>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted);">Last 7 days</span>
+                                </div>
+                                <div style="space-y: 12px;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border-light);">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <div style="width: 8px; height: 8px; background: var(--success-green); border-radius: 50%;"></div>
+                                            <span style="font-size: 0.9rem;">Payment from Acme Corp</span>
+                                        </div>
+                                        <span style="font-weight: 600; color: var(--success-green);">+₹25,000</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border-light);">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <div style="width: 8px; height: 8px; background: var(--warning-yellow); border-radius: 50%;"></div>
+                                            <span style="font-size: 0.9rem;">Software subscription</span>
+                                        </div>
+                                        <span style="font-weight: 600; color: var(--warning-yellow);">-₹2,500</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <div style="width: 8px; height: 8px; background: var(--success-green); border-radius: 50%;"></div>
+                                            <span style="font-size: 0.9rem;">Payment from StartupXYZ</span>
+                                        </div>
+                                        <span style="font-weight: 600; color: var(--success-green);">+₹18,500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-overview">
+            <div class="container">
+                <div class="fade-up">
+                    <h2>Everything You Need to Run Your<br><span class="text-gradient">Freelance Empire</span></h2>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card fade-up stagger-1">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3>Bank-Grade Security</h3>
+                        <p>Your financial data is protected with 256-bit SSL encryption and secure cloud storage. We're SOC 2 compliant and follow the highest security standards.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-up stagger-2">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>Mobile-First Design</h3>
+                        <p>Manage your business on the go with our beautifully designed mobile apps. Create invoices, scan receipts, and track expenses from anywhere.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-up stagger-3">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-link-45deg"></i>
+                        </div>
+                        <h3>Smart Integrations</h3>
+                        <p>Connect with your favorite tools like Google Workspace, Slack, WhatsApp, and popular Indian payment gateways for seamless workflows.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-up stagger-4">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h3>24/7 Expert Support</h3>
+                        <p>Get help when you need it with our responsive customer support team. Chat, email, or video call - we're here to help you succeed.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-up stagger-1">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+                        <h3>Time Tracking</h3>
+                        <p>Built-in time tracking for project-based work. Automatically generate timesheets and convert tracked hours into professional invoices.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-up stagger-2">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Client Portal</h3>
+                        <p>Give your clients a professional portal to view projects, approve proposals, make payments, and download invoices - all branded with your identity.</p>
+                    </div>
+                </div>
             </div>
         </section>
         
         <section class="final-cta">
-            <div class="container" data-aos="fade-up">
-                <h2>Ready to streamline your business?</h2>
-                <a href="pricing.html" class="btn btn-primary">See Plans & Pricing</a>
+            <div class="container fade-up">
+                <h2>Ready to Streamline Your<br><span class="text-gradient">Freelance Business?</span></h2>
+                <p>Join thousands of creators across India who trust IndieFlow to handle their finances while they focus on what they love.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">
+                        Start Free Trial
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="bi bi-play-circle"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                
+                <div style="margin-top: 40px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; opacity: 0.6;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <i class="bi bi-check-circle-fill" style="color: var(--success-green);"></i>
+                        <span>14-day free trial</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <i class="bi bi-check-circle-fill" style="color: var(--success-green);"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <i class="bi bi-check-circle-fill" style="color: var(--success-green);"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -74,18 +1209,246 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-logo-col"><a href="index.html" class="logo" style="color:var(--text-light)">IndieFlow</a><p>The financial operating system for the next generation of independent professionals in India.</p><ul class="footer-socials"><li><a href="#"><i class="bi bi-twitter"></i></a></li><li><a href="#"><i class="bi bi-linkedin"></i></a></li><li><a href="#"><i class="bi bi-instagram"></i></a></li></ul></div>
-                <div class="footer-col"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="#">Security</a></li></ul></div>
-                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
-                <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Contact Us</a></li></ul></div>
+                <div class="footer-logo-col">
+                    <div class="logo">IndieFlow</div>
+                    <p>The financial operating system for the next generation of independent professionals in India. Built by freelancers, for freelancers.</p>
+                    <ul class="footer-socials">
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">GST Guide</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Freelancer Tools</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2025 IndieFlow Technologies Pvt. Ltd. | Made with ❤️ in Navi Mumbai</p></div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IndieFlow Technologies Pvt. Ltd. | Made with ❤️ in Navi Mumbai | <a href="#" style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#" style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({duration:800,once:!0});const hamburger=document.getElementById("hamburger"),navMenu=document.getElementById("main-nav");hamburger.addEventListener("click",()=>{navMenu.classList.toggle("active")});
+        // ===============================
+        // HEADER SCROLL EFFECT
+        // ===============================
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ===============================
+        // MOBILE MENU TOGGLE
+        // ===============================
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('main-nav');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            
+            // Animate hamburger icon
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.className = 'bi bi-x';
+            } else {
+                icon.className = 'bi bi-list';
+            }
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.querySelector('i').className = 'bi bi-list';
+            });
+        });
+
+        // ===============================
+        // SMOOTH SCROLLING FOR NAVIGATION
+        // ===============================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===============================
+        // INTERSECTION OBSERVER FOR ANIMATIONS
+        // ===============================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-up elements
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===============================
+        // FEATURE CARD HOVER EFFECTS
+        // ===============================
+        document.querySelectorAll('.feature-mockup').forEach(mockup => {
+            mockup.addEventListener('mouseenter', () => {
+                mockup.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            mockup.addEventListener('mouseleave', () => {
+                mockup.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // ===============================
+        // PARALLAX EFFECT FOR BACKGROUNDS
+        // ===============================
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const backgrounds = document.querySelectorAll('.features-overview::before');
+            
+            backgrounds.forEach(bg => {
+                if (scrolled < window.innerHeight * 2) {
+                    bg.style.transform = `translateY(${scrolled * 0.1}px)`;
+                }
+            });
+        });
+
+        // ===============================
+        // LOADING ANIMATION
+        // ===============================
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            
+            // Trigger initial animations
+            setTimeout(() => {
+                document.querySelectorAll('.fade-up').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 300);
+        });
+
+        // ===============================
+        // ENHANCED INTERACTIVE MOCKUPS
+        // ===============================
+        
+        // Add typing effect to form inputs
+        function addTypingEffect() {
+            const inputs = document.querySelectorAll('.mockup-input[readonly]');
+            inputs.forEach(input => {
+                const originalValue = input.value;
+                input.addEventListener('mouseenter', () => {
+                    if (originalValue) {
+                        input.value = '';
+                        let i = 0;
+                        const typeInterval = setInterval(() => {
+                            input.value += originalValue[i];
+                            i++;
+                            if (i >= originalValue.length) {
+                                clearInterval(typeInterval);
+                            }
+                        }, 50);
+                    }
+                });
+            });
+        }
+
+        // Initialize typing effects
+        addTypingEffect();
+
+        // ===============================
+        // FEATURE SECTION ANIMATIONS
+        // ===============================
+        const featureSections = document.querySelectorAll('.feature-section');
+        
+        featureSections.forEach((section, index) => {
+            section.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // ===============================
+        // DYNAMIC COUNTER ANIMATIONS
+        // ===============================
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                let current = 0;
+                const increment = target / 100;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target.toLocaleString('en-IN');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current).toLocaleString('en-IN');
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animations when in view
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                }
+            });
+        });
+
+        document.querySelectorAll('[data-count]').forEach(counter => {
+            counterObserver.observe(counter);
+        });
     </script>
 </body>
 </html>

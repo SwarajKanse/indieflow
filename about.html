@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IndieFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root{--primary-dark:#0D1B2A;--secondary-bg:#E0E1DD;--accent-orange:#FF8C42;--highlight-blue:#778DA9;--text-light:#FFFFFF;--text-dark:#0D1B2A;--font-heading:'Poppins',sans-serif;--font-body:'Inter',sans-serif}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--font-body);background-color:var(--secondary-bg);color:var(--text-dark);line-height:1.6}.container{max-width:1100px;margin:0 auto;padding:0 20px}section{padding:80px 0}h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;margin-bottom:20px;line-height:1.2}h1{font-size:3.5rem}h2{font-size:2.5rem}h3{font-size:1.5rem}p{margin-bottom:20px;max-width:600px}img{max-width:100%;height:auto;display:block}.btn{display:inline-block;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.btn-primary{background-color:var(--accent-orange);color:var(--text-dark)}.btn:hover{transform:translateY(-3px);box-shadow:0 4px 15px rgba(0,0,0,.1)}.main-header{background-color:rgba(224,225,221,.8);backdrop-filter:blur(10px);padding:15px 0;position:sticky;top:0;z-index:1000;width:100%}.main-header .container{display:flex;justify-content:space-between;align-items:center}.logo{font-family:var(--font-heading);font-size:1.8rem;text-decoration:none;color:var(--text-dark)}.main-nav ul{display:flex;list-style:none;gap:30px}.main-nav a{text-decoration:none;color:var(--text-dark);font-weight:500;position:relative;padding-bottom:5px}.main-nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background-color:var(--accent-orange);transition:width .3s ease}.main-nav a:hover::after{width:100%}.nav-actions{display:flex;align-items:center;gap:15px}.nav-actions .login-btn{text-decoration:none;font-weight:600;color:var(--text-dark)}.hamburger{display:none;cursor:pointer;font-size:2rem}.page-hero{padding:80px 0;text-align:center;background-color:#fff}.page-hero h1{font-size:3rem}.page-hero p{font-size:1.1rem;max-width:600px;margin:0 auto}.text-center{text-align:center}.text-center p{margin-left:auto;margin-right:auto}.story-section{display:flex;align-items:center;gap:60px}.story-section .story-image,.story-section .story-text{flex:1}.story-section .story-image img{border-radius:12px;box-shadow:0 15px 30px rgba(0,0,0,.1)}.values-section{background-color:#fff}.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:40px}.value-card i{font-size:3rem;color:var(--accent-orange);margin-bottom:15px}.team-section h2{text-align:center}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:40px}.team-member img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 20px auto;border:4px solid #fff;box-shadow:0 5px 15px rgba(0,0,0,.1)}.team-member h4{margin-bottom:5px}.team-member p{font-weight:500;color:var(--highlight-blue);margin-bottom:0}.join-us-section{text-align:center;background-color:var(--primary-dark);color:var(--text-light);border-radius:20px;padding:60px 40px;margin:80px auto;max-width:1100px}footer{background-color:var(--primary-dark);color:var(--text-light);padding:60px 0 20px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}.footer-logo-col p{font-size:.9rem;max-width:300px;color:#ccc}.footer-socials{display:flex;gap:15px;list-style:none;margin-top:20px}.footer-socials a{color:var(--text-light);font-size:1.5rem}.footer-col h4{font-family:var(--font-heading);margin-bottom:15px}.footer-col ul{list-style:none}.footer-col li{margin-bottom:10px}.footer-col a{text-decoration:none;color:#ccc;transition:color .2s ease}.footer-col a:hover{color:var(--accent-orange)}.footer-bottom{text-align:center;padding-top:20px;border-top:1px solid #444;font-size:.9rem;color:#aaa}@media (max-width:992px){.team-grid{grid-template-columns:repeat(3,1fr)}.story-section{flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr}}@media (max-width:768px){.main-nav{display:none;position:absolute;top:70px;right:0;background-color:var(--secondary-bg);width:100%;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}.main-nav.active{display:block}.main-nav ul{flex-direction:column;text-align:center}.nav-actions{display:none}.hamburger{display:block}.values-grid,.team-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;text-align:center}.footer-logo-col p{margin:0 auto}.footer-socials{justify-content:center}}@media (max-width:576px){.page-hero h1{font-size:2.2rem}}
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">IndieFlow</a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container" data-aos="fade-up">
+                <h1>Our mission is to empower the independent.</h1>
+                <p>We're building the financial backbone for the next generation of creators, freelancers, and solopreneurs in India.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="story-section" data-aos="fade-up">
+                <div class="story-text">
+                    <h2>Born From a Freelancer's Struggle</h2>
+                    <p>IndieFlow started with a simple, frustrating problem. Our founder, a freelance designer, was passionate about his creative work but constantly bogged down by financial admin. Creating GST invoices, tracking payments, and figuring out his taxes was a monthly nightmare.</p>
+                    <p>He realized that the tools available were either too complex for a one-person business or too simple to be truly useful. The entire financial system seemed built for salaried employees, not for the growing army of independent professionals. That's when the idea for IndieFlow was born: a single, beautiful platform to handle all the financial complexities, so creators can focus on what they do best.</p>
+                </div>
+                <div class="story-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Founding team working collaboratively">
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center">
+                    <h2>Our Core Values</h2>
+                    <p>These principles guide every decision we make, from the features we build to the way we support our users.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100"><i class="bi bi-people-fill"></i><h3>Creator-First</h3><p>Our users are at the heart of everything. We build tools that solve their real-world problems and empower their success.</p></div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200"><i class="bi bi-lightbulb"></i><h3>Beautifully Simple</h3><p>We believe powerful software doesn't have to be complicated. We obsess over clean design and intuitive user experiences.</p></div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300"><i class="bi bi-lock-fill"></i><h3>Radical Transparency</h3><p>We are open and honest in our pricing, our security practices, and our communication. Trust is earned, not given.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section container">
+            <h2 data-aos="fade-up">Meet the Team</h2>
+            <div class="team-grid" data-aos="fade-up">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" alt="Team Member 1">
+                    <h4>Priya Sharma</h4>
+                    <p>Co-Founder & CEO</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" alt="Team Member 2">
+                    <h4>Rohan Mehra</h4>
+                    <p>Co-Founder & CTO</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" alt="Team Member 3">
+                    <h4>Aisha Khan</h4>
+                    <p>Head of Product</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container">
+        <section class="join-us-section" data-aos="zoom-in">
+            <h2>Join Us on Our Mission</h2>
+            <p>We're always looking for passionate people to join our team. If you believe in the power of the creator economy, check out our open positions.</p>
+            <a href="#" class="btn btn-primary">See Open Roles</a>
+        </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-col"><a href="index.html" class="logo" style="color:var(--text-light)">IndieFlow</a><p>The financial operating system for the next generation of independent professionals in India.</p><ul class="footer-socials"><li><a href="#"><i class="bi bi-twitter"></i></a></li><li><a href="#"><i class="bi bi-linkedin"></i></a></li><li><a href="#"><i class="bi bi-instagram"></i></a></li></ul></div>
+                <div class="footer-col"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="#">Security</a></li></ul></div>
+                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+                <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Contact Us</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 IndieFlow Technologies Pvt. Ltd. | Made with ❤️ in Navi Mumbai</p></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:800,once:!0});const hamburger=document.getElementById("hamburger"),navMenu=document.getElementById("main-nav");hamburger.addEventListener("click",()=>{navMenu.classList.toggle("active")});
+    </script>
+</body>
+</html>

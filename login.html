@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IndieFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root{--primary-dark:#0D1B2A;--secondary-bg:#E0E1DD;--accent-orange:#FF8C42;--highlight-blue:#778DA9;--text-light:#FFFFFF;--text-dark:#0D1B2A;--font-heading:'Poppins',sans-serif;--font-body:'Inter',sans-serif}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-body);background-color:var(--secondary-bg);color:var(--text-dark);line-height:1.6;display:flex;align-items:center;justify-content:center;min-height:100vh}.login-container{width:100%;max-width:900px;min-height:600px;background-color:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.1);display:flex;overflow:hidden}.login-panel{flex:1;padding:50px}.brand-panel{background-color:var(--primary-dark);display:flex;align-items:center;justify-content:center}.brand-panel img{width:100%;height:100%;object-fit:cover}.login-form{max-width:350px;margin:auto}.logo{font-family:var(--font-heading);font-size:2rem;text-decoration:none;color:var(--text-dark);display:inline-block;margin-bottom:10px}.login-form h1{font-size:1.8rem;margin-bottom:10px}.login-form p{color:#666;margin-bottom:30px}.form-group{margin-bottom:20px}.form-group label{display:block;font-weight:600;margin-bottom:5px}.form-group input{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;font-family:var(--font-body)}.btn-full{width:100%;padding:14px;border-radius:8px;text-decoration:none;font-weight:600;transition:transform .2s ease,box-shadow .2s ease;border:none;cursor:pointer;font-size:1rem}.btn-primary{background-color:var(--accent-orange);color:var(--text-dark)}.btn-full:hover{transform:translateY(-3px);box-shadow:0 4px 15px rgba(0,0,0,.1)}.divider{text-align:center;margin:30px 0;color:#aaa;position:relative}.divider::before,.divider::after{content:'';position:absolute;top:50%;width:40%;height:1px;background-color:#ccc}.divider::before{left:0}.divider::after{right:0}.social-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:12px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid #ccc;color:var(--text-dark);background-color:#fff;margin-bottom:15px;transition:background-color .2s ease}.social-btn:hover{background-color:#f7f7f7}.social-btn i{font-size:1.2rem}.form-footer{text-align:center;margin-top:20px}.form-footer a{color:var(--accent-orange);text-decoration:none;font-weight:600}@media (max-width:768px){.brand-panel{display:none}.login-container{max-width:450px;margin:20px}}
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="brand-panel">
+            <img src="http://googleusercontent.com/image_generation_content/5" alt="IndieFlow Brand Abstract Art">
+        </div>
+        <div class="login-panel">
+            <div class="login-form">
+                <a href="index.html" class="logo">IndieFlow</a>
+                <h1>Welcome Back</h1>
+                <p>Login to manage your freelance business.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn-full btn-primary">Login</button>
+                </form>
+                <div class="divider">OR</div>
+                <a href="#" class="social-btn"><i class="bi bi-google"></i> Continue with Google</a>
+                <p class="form-footer">
+                    Don't have an account? <a href="#">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

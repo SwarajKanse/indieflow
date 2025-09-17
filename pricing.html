@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - IndieFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root{--primary-dark:#0D1B2A;--secondary-bg:#E0E1DD;--accent-orange:#FF8C42;--highlight-blue:#778DA9;--text-light:#FFFFFF;--text-dark:#0D1B2A;--font-heading:'Poppins',sans-serif;--font-body:'Inter',sans-serif}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--font-body);background-color:var(--secondary-bg);color:var(--text-dark);line-height:1.6}.container{max-width:1100px;margin:0 auto;padding:0 20px}section{padding:80px 0}h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;margin-bottom:20px;line-height:1.2}h1{font-size:3.5rem}h2{font-size:2.5rem}h3{font-size:1.5rem}p{margin-bottom:20px;max-width:600px}img{max-width:100%;height:auto;display:block}.btn{display:inline-block;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.btn-primary{background-color:var(--accent-orange);color:var(--text-dark)}.btn-secondary{background-color:#fff;color:var(--text-dark);border:2px solid var(--primary-dark)}.btn:hover{transform:translateY(-3px);box-shadow:0 4px 15px rgba(0,0,0,.1)}.main-header{background-color:rgba(224,225,221,.8);backdrop-filter:blur(10px);padding:15px 0;position:sticky;top:0;z-index:1000;width:100%}.main-header .container{display:flex;justify-content:space-between;align-items:center}.logo{font-family:var(--font-heading);font-size:1.8rem;text-decoration:none;color:var(--text-dark)}.main-nav ul{display:flex;list-style:none;gap:30px}.main-nav a{text-decoration:none;color:var(--text-dark);font-weight:500;position:relative;padding-bottom:5px}.main-nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background-color:var(--accent-orange);transition:width .3s ease}.main-nav a:hover::after{width:100%}.nav-actions{display:flex;align-items:center;gap:15px}.nav-actions .login-btn{text-decoration:none;font-weight:600;color:var(--text-dark)}.hamburger{display:none;cursor:pointer;font-size:2rem}.page-hero{padding:80px 0;text-align:center;background-color:#fff}.page-hero h1{font-size:3rem}.page-hero p{font-size:1.1rem;max-width:600px;margin:0 auto}.pricing-toggle{display:flex;justify-content:center;align-items:center;margin-top:20px;gap:15px;font-weight:600}.switch{position:relative;display:inline-block;width:60px;height:34px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;transition:.4s;border-radius:34px}.slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;transition:.4s;border-radius:50%}input:checked+.slider{background-color:var(--highlight-blue)}input:checked+.slider:before{transform:translateX(26px)}.save-badge{background-color:var(--accent-orange);color:var(--text-dark);padding:5px 10px;border-radius:50px;font-size:.8rem;font-weight:700}.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}.pricing-card{background-color:#fff;padding:40px;border-radius:12px;display:flex;flex-direction:column}.pricing-card.popular{border:3px solid var(--accent-orange);transform:scale(1.05)}.pricing-card h3{font-size:1.2rem;text-transform:uppercase;letter-spacing:1px}.price{font-size:3rem;font-family:var(--font-heading);font-weight:700;margin:10px 0}.price span{font-size:1rem;font-weight:400;color:#666}.pricing-card p{flex-grow:1}.pricing-card ul{list-style:none;margin:20px 0;flex-grow:1}.pricing-card li{position:relative;padding-left:30px;margin-bottom:15px}.pricing-card li::before{content:'\\f26a';font-family:'bootstrap-icons';position:absolute;left:0;top:2px;color:var(--accent-orange);font-size:1.2rem}.pricing-card .btn{width:100%;text-align:center;margin-top:auto}.faq-section{max-width:800px;margin:0 auto}.faq-section h2{text-align:center}.faq-item{background-color:#fff;margin-bottom:10px;border-radius:8px}.faq-question{width:100%;background:0 0;border:none;text-align:left;padding:20px;font-size:1.1rem;font-weight:600;font-family:var(--font-body);cursor:pointer;display:flex;justify-content:space-between;align-items:center}.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease-out}.faq-answer p{padding:0 20px 20px 20px;margin:0}.faq-question .icon{transition:transform .3s ease}.faq-item.active .faq-question .icon{transform:rotate(180deg)}footer{background-color:var(--primary-dark);color:var(--text-light);padding:60px 0 20px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}.footer-logo-col p{font-size:.9rem;max-width:300px;color:#ccc}.footer-socials{display:flex;gap:15px;list-style:none;margin-top:20px}.footer-socials a{color:var(--text-light);font-size:1.5rem}.footer-col h4{font-family:var(--font-heading);margin-bottom:15px}.footer-col ul{list-style:none}.footer-col li{margin-bottom:10px}.footer-col a{text-decoration:none;color:#ccc;transition:color .2s ease}.footer-col a:hover{color:var(--accent-orange)}.footer-bottom{text-align:center;padding-top:20px;border-top:1px solid #444;font-size:.9rem;color:#aaa}@media (max-width:992px){.pricing-grid{grid-template-columns:1fr}.pricing-card{margin-bottom:30px}.pricing-card.popular{transform:scale(1)}.footer-grid{grid-template-columns:1fr 1fr}}@media (max-width:768px){.main-nav{display:none;position:absolute;top:70px;right:0;background-color:var(--secondary-bg);width:100%;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}.main-nav.active{display:block}.main-nav ul{flex-direction:column;text-align:center}.nav-actions{display:none}.hamburger{display:block}.footer-grid{grid-template-columns:1fr;text-align:center}.footer-logo-col p{margin:0 auto}.footer-socials{justify-content:center}}@media (max-width:576px){.page-hero h1{font-size:2.2rem}}
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">IndieFlow</a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container" data-aos="fade-up">
+                <h1>Find the perfect plan to grow with you.</h1>
+                <p>Start for free and scale as you go. All plans include our world-class support.</p>
+                <div class="pricing-toggle">
+                    <span>Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billing-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Annual <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="pricing-grid" data-aos="fade-up">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">₹0</div>
+                    <p>For beginners and students getting started in the freelance world.</p>
+                    <ul>
+                        <li>Up to 3 clients</li>
+                        <li>Up to 5 invoices/month</li>
+                        <li>Basic expense tracking</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card popular">
+                    <h3>Pro</h3>
+                    <div class="price" data-monthly="499" data-annual="399">₹499<span>/month</span></div>
+                    <p>For serious freelancers and creators managing multiple projects.</p>
+                    <ul>
+                        <li>Unlimited clients</li>
+                        <li>Unlimited invoices</li>
+                        <li>Smart expense tracking</li>
+                        <li>Project proposals</li>
+                        <li>Financial reports</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Choose Pro</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Studio</h3>
+                    <div class="price" data-monthly="1999" data-annual="1599">₹1999<span>/month</span></div>
+                    <p>For small agencies and teams that collaborate on projects.</p>
+                    <ul>
+                        <li>Everything in Pro</li>
+                        <li>Up to 5 team members</li>
+                        <li>Client collaboration portal</li>
+                        <li>Advanced reporting</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section container">
+            <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+            <div class="faq-item" data-aos="fade-up">
+                <button class="faq-question">Can I change my plan later? <i class="bi bi-chevron-down icon"></i></button>
+                <div class="faq-answer"><p>Absolutely! You can upgrade, downgrade, or cancel your plan at any time from your account dashboard. The changes will be reflected in your next billing cycle.</p></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <button class="faq-question">What payment methods do you accept? <i class="bi bi-chevron-down icon"></i></button>
+                <div class="faq-answer"><p>We accept all major credit cards, debit cards, UPI, and Net Banking through our secure payment gateway partner, Razorpay.</p></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <button class="faq-question">Is my financial data secure? <i class="bi bi-chevron-down icon"></i></button>
+                <div class="faq-answer"><p>Yes, security is our top priority. All your data is encrypted with bank-level 256-bit SSL encryption. We never share your data with third parties.</p></div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-col"><a href="index.html" class="logo" style="color:var(--text-light)">IndieFlow</a><p>The financial operating system for the next generation of independent professionals in India.</p><ul class="footer-socials"><li><a href="#"><i class="bi bi-twitter"></i></a></li><li><a href="#"><i class="bi bi-linkedin"></i></a></li><li><a href="#"><i class="bi bi-instagram"></i></a></li></ul></div>
+                <div class="footer-col"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="#">Security</a></li></ul></div>
+                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+                <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Contact Us</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 IndieFlow Technologies Pvt. Ltd. | Made with ❤️ in Navi Mumbai</p></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:800,once:!0});const hamburger=document.getElementById("hamburger"),navMenu=document.getElementById("main-nav");hamburger.addEventListener("click",()=>{navMenu.classList.toggle("active")});const billingToggle=document.getElementById("billing-toggle");billingToggle.addEventListener("change",()=>{document.querySelectorAll(".price[data-monthly]").forEach(e=>{const t=billingToggle.checked?e.dataset.annual:e.dataset.monthly;e.innerHTML=`₹${t}<span>/month</span>`})});const faqItems=document.querySelectorAll(".faq-item");faqItems.forEach(e=>{const t=e.querySelector(".faq-question"),o=e.querySelector(".faq-answer");t.addEventListener("click",()=>{const c=e.classList.contains("active");faqItems.forEach(e=>{e.classList.remove("active"),e.querySelector(".faq-answer").style.maxHeight=null}),c||(e.classList.add("active"),o.style.maxHeight=o.scrollHeight+"px")})});
+    </script>
+</body>
+</html>
